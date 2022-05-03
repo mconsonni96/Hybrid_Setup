@@ -1,0 +1,1282 @@
+
+*** Running vivado
+    with args -log design_1_AXI4Stream_HybridTDL_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_AXI4Stream_HybridTDL_0_1.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_AXI4Stream_HybridTDL_0_1.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mconsonni/Utility_Ip_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top design_1_AXI4Stream_HybridTDL_0_1 -part xcku040-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2021.05' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 100649
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2595.422 ; gain = 169.688 ; free physical = 4847 ; free virtual = 10932
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_AXI4Stream_HybridTDL_0_1' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/synth/design_1_AXI4Stream_HybridTDL_0_1.vhd:69]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter TYPE_TDL_0 bound to: O - type: string 
+	Parameter TYPE_TDL_1 bound to: O - type: string 
+	Parameter TYPE_TDL_2 bound to: C - type: string 
+	Parameter TYPE_TDL_3 bound to: C - type: string 
+	Parameter TYPE_TDL_4 bound to: C - type: string 
+	Parameter TYPE_TDL_5 bound to: C - type: string 
+	Parameter TYPE_TDL_6 bound to: C - type: string 
+	Parameter TYPE_TDL_7 bound to: C - type: string 
+	Parameter TYPE_TDL_8 bound to: C - type: string 
+	Parameter TYPE_TDL_9 bound to: C - type: string 
+	Parameter TYPE_TDL_10 bound to: C - type: string 
+	Parameter TYPE_TDL_11 bound to: C - type: string 
+	Parameter TYPE_TDL_12 bound to: C - type: string 
+	Parameter TYPE_TDL_13 bound to: C - type: string 
+	Parameter TYPE_TDL_14 bound to: C - type: string 
+	Parameter TYPE_TDL_15 bound to: C - type: string 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter NUMBER_OF_CARRY_CHAINS bound to: 2 - type: integer 
+	Parameter NUMBER_OF_DSP_CHAINS bound to: 2 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter VALID_NUMBER_OF_TDL_INIT bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_0 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_1 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_2 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_3 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_4 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_5 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_6 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_7 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_8 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_9 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_10 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_11 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_12 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_13 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_14 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_15 bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'AXI4Stream_VirtualTDL' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL.vhd:103' bound to instance 'U0' of component 'AXI4Stream_VirtualTDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/synth/design_1_AXI4Stream_HybridTDL_0_1.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'AXI4Stream_VirtualTDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL.vhd:256]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter TYPE_TDL_0 bound to: O - type: string 
+	Parameter TYPE_TDL_1 bound to: O - type: string 
+	Parameter TYPE_TDL_2 bound to: C - type: string 
+	Parameter TYPE_TDL_3 bound to: C - type: string 
+	Parameter TYPE_TDL_4 bound to: C - type: string 
+	Parameter TYPE_TDL_5 bound to: C - type: string 
+	Parameter TYPE_TDL_6 bound to: C - type: string 
+	Parameter TYPE_TDL_7 bound to: C - type: string 
+	Parameter TYPE_TDL_8 bound to: C - type: string 
+	Parameter TYPE_TDL_9 bound to: C - type: string 
+	Parameter TYPE_TDL_10 bound to: C - type: string 
+	Parameter TYPE_TDL_11 bound to: C - type: string 
+	Parameter TYPE_TDL_12 bound to: C - type: string 
+	Parameter TYPE_TDL_13 bound to: C - type: string 
+	Parameter TYPE_TDL_14 bound to: C - type: string 
+	Parameter TYPE_TDL_15 bound to: C - type: string 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter NUMBER_OF_CARRY_CHAINS bound to: 2 - type: integer 
+	Parameter NUMBER_OF_DSP_CHAINS bound to: 2 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter VALID_NUMBER_OF_TDL_INIT bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_0 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_1 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_2 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_3 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_4 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_5 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_6 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_7 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_8 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_9 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_10 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_11 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_12 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_13 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_14 bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_15 bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter TYPE_TDL_ARRAY bound to: 128'b01001111010011110100001101000011010000110100001101000011010000110100001101000011010000110100001101000011010000110100001101000011 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter NUMBER_OF_CARRY_CHAINS bound to: 2 - type: integer 
+	Parameter NUMBER_OF_DSP_CHAINS bound to: 2 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter VALID_NUMBER_OF_TDL_INIT bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_ARRAY bound to: 176'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'AXI4Stream_VirtualTDL_Wrapper' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:63' bound to instance 'Inst_AXI4Stream_VirtualTDL_Wrapper' of component 'AXI4Stream_VirtualTDL_Wrapper' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'AXI4Stream_VirtualTDL_Wrapper' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:126]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter TYPE_TDL_ARRAY bound to: 128'b01001111010011110100001101000011010000110100001101000011010000110100001101000011010000110100001101000011010000110100001101000011 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter NUMBER_OF_CARRY_CHAINS bound to: 2 - type: integer 
+	Parameter NUMBER_OF_DSP_CHAINS bound to: 2 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter VALID_NUMBER_OF_TDL_INIT bound to: 0 - type: integer 
+	Parameter OFFSET_TAP_TDL_ARRAY bound to: 176'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'CARRY_TDL' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:79' bound to instance 'Inst_CARRY_TDL' of component 'CARRY_TDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:376]
+INFO: [Synth 8-638] synthesizing module 'CARRY_TDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:117]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'Init_CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:207]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+	Parameter CARRY_TYPE bound to: SINGLE_CY8 - type: string 
+INFO: [Synth 8-113] binding component instance 'CARRY8_TDL' to cell 'CARRY8' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'CARRY_TDL' (1#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:117]
+	Parameter TYPE_TDL bound to: O - type: string 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter OFFSET_TAP_TDL bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'CARRY_Sampler' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_Sampler.vhd:88' bound to instance 'Inst_CARRY_Sampler' of component 'CARRY_Sampler' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'CARRY_Sampler' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_Sampler.vhd:194]
+	Parameter TYPE_TDL bound to: O - type: string 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter OFFSET_TAP_TDL bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+WARNING: [Synth 8-614] signal 'Polarity' is read in the process but is not in the sensitivity list [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_Sampler.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'CARRY_Sampler' (2#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_Sampler.vhd:194]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'CARRY_TDL' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_TDL.vhd:79' bound to instance 'Inst_CARRY_TDL' of component 'CARRY_TDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:376]
+	Parameter TYPE_TDL bound to: O - type: string 
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter BUFFERING_STAGE bound to: 0 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter OFFSET_TAP_TDL bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'CARRY_Sampler' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/CARRY_Sampler.vhd:88' bound to instance 'Inst_CARRY_Sampler' of component 'CARRY_Sampler' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:429]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'DSP_TDL' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:62' bound to instance 'Inst_TDL' of component 'DSP_TDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:481]
+INFO: [Synth 8-638] synthesizing module 'DSP_TDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:86]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:125]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+	Parameter ACASCREG bound to: 0 - type: integer 
+	Parameter ADREG bound to: 0 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AMULTSEL bound to: A - type: string 
+	Parameter AREG bound to: 0 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter AUTORESET_PRIORITY bound to: RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 0 - type: integer 
+	Parameter BMULTSEL bound to: B - type: string 
+	Parameter BREG bound to: 0 - type: integer 
+	Parameter B_INPUT bound to: CASCADE - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 0 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 1 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 9'b000000000 
+	Parameter IS_RSTALLCARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_RSTALUMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTA_INVERTED bound to: 1'b0 
+	Parameter IS_RSTB_INVERTED bound to: 1'b0 
+	Parameter IS_RSTCTRL_INVERTED bound to: 1'b0 
+	Parameter IS_RSTC_INVERTED bound to: 1'b0 
+	Parameter IS_RSTD_INVERTED bound to: 1'b0 
+	Parameter IS_RSTINMODE_INVERTED bound to: 1'b0 
+	Parameter IS_RSTM_INVERTED bound to: 1'b0 
+	Parameter IS_RSTP_INVERTED bound to: 1'b0 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 0 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREADDINSEL bound to: A - type: string 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter RND bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_MULT bound to: NONE - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+	Parameter USE_WIDEXOR bound to: FALSE - type: string 
+	Parameter XORSIMD bound to: XOR24_48_96 - type: string 
+INFO: [Synth 8-113] binding component instance 'DSP48E2_inst' to cell 'DSP48E2' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'DSP_TDL' (3#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:86]
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter OFFSET_TAP_TDL bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'DSP_Sampler' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_Sampler.vhd:61' bound to instance 'Inst_DSP_Sampler' of component 'DSP_Sampler' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:523]
+INFO: [Synth 8-638] synthesizing module 'DSP_Sampler' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_Sampler.vhd:105]
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+WARNING: [Synth 8-3819] Generic 'offset_tap_tdl' not present in instantiated entity will be ignored [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:523]
+INFO: [Synth 8-256] done synthesizing module 'DSP_Sampler' (4#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_Sampler.vhd:105]
+	Parameter XUS_VS_X7S bound to: XUS - type: string 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'DSP_TDL' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_TDL.vhd:62' bound to instance 'Inst_TDL' of component 'DSP_TDL' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:481]
+	Parameter DEBUG_MODE bound to: 1 - type: bool 
+	Parameter MIN_VALID_TAP_POS bound to: 0 - type: integer 
+	Parameter STEP_VALID_TAP_POS bound to: 8 - type: integer 
+	Parameter MAX_VALID_TAP_POS bound to: 511 - type: integer 
+	Parameter VALID_POSITION_TAP_INIT bound to: 0 - type: integer 
+	Parameter NUM_TAP_TDL bound to: 512 - type: integer 
+	Parameter OFFSET_TAP_TDL bound to: 0 - type: integer 
+	Parameter BIT_SMP_TDL bound to: 512 - type: integer 
+	Parameter NUM_TAP_PRE_TDL bound to: 128 - type: integer 
+	Parameter BIT_SMP_PRE_TDL bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'DSP_Sampler' declared at '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/DSP_Sampler.vhd:61' bound to instance 'Inst_DSP_Sampler' of component 'DSP_Sampler' [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:523]
+INFO: [Synth 8-256] done synthesizing module 'AXI4Stream_VirtualTDL_Wrapper' (5#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL_Wrapper.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'AXI4Stream_VirtualTDL' (6#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ipshared/0b50/hdl/AXI4Stream_VirtualTDL.vhd:256]
+INFO: [Synth 8-256] done synthesizing module 'design_1_AXI4Stream_HybridTDL_0_1' (7#1) [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/synth/design_1_AXI4Stream_HybridTDL_0_1.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2648.328 ; gain = 222.594 ; free physical = 5630 ; free virtual = 11716
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2663.172 ; gain = 237.438 ; free physical = 5628 ; free virtual = 11714
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2663.172 ; gain = 237.438 ; free physical = 5628 ; free virtual = 11714
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2674.078 ; gain = 0.000 ; free physical = 5620 ; free virtual = 11706
+INFO: [Netlist 29-17] Analyzing 188 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/src/timing_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/src/timing_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.runs/design_1_AXI4Stream_HybridTDL_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.runs/design_1_AXI4Stream_HybridTDL_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2831.922 ; gain = 0.000 ; free physical = 5535 ; free virtual = 11621
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 28 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2831.922 ; gain = 0.000 ; free physical = 5535 ; free virtual = 11621
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2831.922 ; gain = 406.188 ; free physical = 5622 ; free virtual = 11708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2831.922 ; gain = 406.188 ; free physical = 5622 ; free virtual = 11708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.runs/design_1_AXI4Stream_HybridTDL_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2831.922 ; gain = 406.188 ; free physical = 5622 ; free virtual = 11708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2831.922 ; gain = 406.188 ; free physical = 5615 ; free virtual = 11702
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	              640 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2831.922 ; gain = 406.188 ; free physical = 5595 ; free virtual = 11685
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2861.750 ; gain = 436.016 ; free physical = 5348 ; free virtual = 11438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2873.750 ; gain = 448.016 ; free physical = 5335 ; free virtual = 11425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2892.781 ; gain = 467.047 ; free physical = 5331 ; free virtual = 11422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5331 ; free virtual = 11421
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5331 ; free virtual = 11421
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5330 ; free virtual = 11420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5330 ; free virtual = 11420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5330 ; free virtual = 11420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5330 ; free virtual = 11420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   160|
+|2     |DSP_ALU         |    28|
+|3     |DSP_A_B_DATA    |    28|
+|5     |DSP_C_DATA      |    28|
+|6     |DSP_MULTIPLIER  |    28|
+|7     |DSP_M_DATA      |    28|
+|8     |DSP_OUTPUT      |    28|
+|9     |DSP_PREADD      |    28|
+|10    |DSP_PREADD_DATA |    28|
+|11    |LUT1            |     1|
+|12    |LUT5            |     1|
+|13    |LUT6            |    34|
+|14    |MUXF7           |    16|
+|15    |MUXF8           |     8|
+|16    |FDRE            |  1027|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.688 ; gain = 476.953 ; free physical = 5330 ; free virtual = 11420
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2902.688 ; gain = 308.203 ; free physical = 5350 ; free virtual = 11441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2902.695 ; gain = 476.953 ; free physical = 5349 ; free virtual = 11440
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2902.695 ; gain = 0.000 ; free physical = 5432 ; free virtual = 11522
+INFO: [Netlist 29-17] Analyzing 212 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2938.375 ; gain = 0.000 ; free physical = 5378 ; free virtual = 11468
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 28 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+139 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2938.375 ; gain = 520.809 ; free physical = 5537 ; free virtual = 11627
+INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.runs/design_1_AXI4Stream_HybridTDL_0_1_synth_1/design_1_AXI4Stream_HybridTDL_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_AXI4Stream_HybridTDL_0_1, cache-ID = 15a03b9d392945e5
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.runs/design_1_AXI4Stream_HybridTDL_0_1_synth_1/design_1_AXI4Stream_HybridTDL_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_AXI4Stream_HybridTDL_0_1_utilization_synth.rpt -pb design_1_AXI4Stream_HybridTDL_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  2 17:12:00 2022...

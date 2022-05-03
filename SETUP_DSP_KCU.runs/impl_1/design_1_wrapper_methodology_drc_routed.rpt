@@ -1,0 +1,913 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue May  3 10:40:34 2022
+| Host         : mconsonni-All-Series running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xcku040-ffva1156-2-e
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_design_1_wrapper_physopt
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 163
++-----------+------------------+--------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                            | Violations |
++-----------+------------------+--------------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree     | 2          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks         | 4          |
+| TIMING-7  | Critical Warning | No common node between related clocks                  | 3          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                            | 21         |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin              | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                           | 2          |
+| TIMING-9  | Warning          | Unknown CDC Logic                                      | 1          |
+| TIMING-16 | Warning          | Large setup violation                                  | 49         |
+| TIMING-20 | Warning          | Non-clocked latch                                      | 65         |
+| TIMING-23 | Warning          | Combinational loop found                               | 1          |
+| TIMING-24 | Warning          | Overridden Max delay datapath only                     | 2          |
+| XDCC-1    | Warning          | Scoped Clock constraint overwritten with the same name | 10         |
+| XDCB-6    | Advisory         | Timing constraint pointing to hierarchical pins        | 1          |
++-----------+------------------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock aclk is defined downstream of clock clk_out1_design_1_clk_wiz_0_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-4#2 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock clk is defined downstream of clock clk_out1_design_1_clk_wiz_0_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks aclk and clk_out1_design_1_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks aclk] -to [get_clocks clk_out1_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk and aclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk] -to [get_clocks aclk]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and aclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks aclk]
+Related violations: <none>
+
+TIMING-6#4 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks clk]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks aclk and clk_out1_design_1_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks aclk] -to [get_clocks clk_out1_design_1_clk_wiz_0_0]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and aclk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks aclk]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_design_1_clk_wiz_0_0 and clk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design_1_clk_wiz_0_0] -to [get_clocks clk]
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividedEvent_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_Divider_SS/DividerCounter_uns_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_OscDivider/DividedOsc_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_OscDivider/HalfDividerCounter_uns_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_OscDivider/HalfDividerCounter_uns_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/Inst_OscDivider/HalfDividerCounter_uns_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock aclk is created on an inappropriate internal pin design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/aclk. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-27#2 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clk is created on an inappropriate internal pin design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/clk. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/state[1]_i_3__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[0]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[10]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[11]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[12]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[1]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[2]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[3]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[4]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[5]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[6]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[7]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[8]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[9]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/integrator_ready_reg/CLR,
+design_1_i/BeltBus_TDCHistogrammer_0/U0/histogrammer_cu_inst/integrator_inst_A/state_reg[0]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/state[1]_i_3__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[0]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[10]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[11]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[12]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[1]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[2]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[3]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[4]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[5]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[6]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[7]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[8]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/addr_counter_reg[9]/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/integrator_ready_reg/CLR,
+design_1_i/BeltBus_TDCHistogrammer_1/U0/histogrammer_cu_inst/integrator_inst_A/state_reg[0]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.003 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][11]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.005 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][7]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.006 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][17]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.008 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[9]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.017 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][22]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.020 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][51]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.022 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][44]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.025 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][1]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.041 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][21]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.051 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][21]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.055 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[15]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.058 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][23]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.060 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][22]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.060 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[1]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.064 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][23]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.066 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][55]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.066 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][2]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.069 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][1]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.081 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][17]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.085 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][57]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.089 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[5]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.092 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][23]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.093 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[24]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.098 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[4]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.100 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][52]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.104 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][1]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.110 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][51]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.110 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[11]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.134 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[18]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.137 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][2]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.152 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][51]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.153 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][57]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -1.167 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[21]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -1.168 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][2]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -1.186 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][22]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -1.208 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][46]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -1.212 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[22]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -1.221 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][20]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -1.224 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][20]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -1.229 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][45]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -1.254 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[0][19]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -1.261 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][20]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -1.297 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[1][19]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -1.303 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[20]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -1.318 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[23]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -1.343 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[17]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -1.391 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/CH_PERIOD_reg[2][19]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -1.437 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[19]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -1.441 ns between design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/read_state_reg[1]/C (clocked by aclk) and design_1_i/TDC_Calib/AXI4_TDC_Wrapper_0/U0/axi4_wrapper_inst/axi4_inst/s00_axi_rdata_reg[2]/D (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[0] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[10] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[11] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[12] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[13] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[14] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[15] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[16] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[17] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[18] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[19] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[1] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[20] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[21] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[22] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[23] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[24] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[25] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[26] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[27] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[28] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[29] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[2] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[30] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[31] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[3] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[4] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[5] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[6] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[7] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[8] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[9] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/data_fifo_out_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[0] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[10] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[11] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[12] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[13] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[14] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[15] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[16] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[17] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[18] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[19] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[1] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[20] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[21] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[22] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[23] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[24] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[25] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[26] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[27] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[28] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[29] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[2] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[30] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[31] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[3] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[4] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[5] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[6] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[7] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[8] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[9] cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/meta_fifo_out_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/terminate_packet_reg cannot be properly analyzed as its control pin design_1_i/BeltBus_TTM_0/U0/fifo_inserter_inst/terminate_packet_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/GenInternalClock.Inst_RingOscillator/Inst_X7S_CARRY4_Delay/GenDelay.Gen_CARRY4_TDL[2].CARRY4_TDL_CARRY8/CI and design_1_i/TDC_Calib/TDC/StartStopGenerator_0/U0/GenInternalClock.Inst_RingOscillator/Inst_X7S_CARRY4_Delay/GenDelay.Gen_CARRY4_TDL[2].CARRY4_TDL_CARRY8/CO[7] to disable the timing loop
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks aclk and clk overrides a set_max_delay -datapath_only (position 43). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 17 in the Timing Constraints window in Vivado IDE) between clocks aclk and clk overrides a set_max_delay -datapath_only (position 51). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_0/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowC_0_0/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#2 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_1/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowC_0_1/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#3 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_2/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 2.500 -name clk -waveform {0.000 1.250} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_2/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#4 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 2.400 -name clk -waveform {0.000 1.200} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_0/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#5 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 2.500 -name clk -waveform {0.000 1.250} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_0/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowC_0_2/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#6 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 2.500 -name clk -waveform {0.000 1.250} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_2/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#7 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 2.500 -name clk -waveform {0.000 1.250} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_2/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 2.400 -name clk -waveform {0.000 1.200} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_PeriodMet_0_0/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#8 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowC_0_0/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 2.500 -name clk -waveform {0.000 1.250} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_0/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#9 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_OverflowC_0_1/src/timing_ooc.xdc (Line: 1))
+Previous: create_clock -period 2.500 -name clk -waveform {0.000 1.250} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_HybridTDL_0_1/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCC-1#10 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 5.000 -name clk -waveform {0.000 2.500} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4_TDC_Wrapper_0_0/src/timing_ooc.xdc (Line: 2))
+Previous: create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance clk] (Source: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_AXI4Stream_MagicCali_0_1/src/timing_ooc.xdc (Line: 1))
+Related violations: <none>
+
+XDCB-6#1 Advisory
+Timing constraint pointing to hierarchical pins  
+A timing constraint 'set_false_path' has a single -through that points to hierarchical pins (see constraint position '18' in the Timing Constraint window in Vivado IDE). With such constraint, it is recommended to have a DONT_TOUCH or KEEP_HIERARCHY on the hierarchical module to avoid the risk of pin names changing during synthesis.
+Current XDC: /home/mconsonni/Desktop/Tesi/Projects/SETUP_DSP_KCU/SETUP_DSP_KCU.gen/sources_1/bd/design_1/ip/design_1_BeltBus_TDCCounter_0_0/xdc/timinig.xdc (Line: 5)
+Related violations: <none>
+
+
